@@ -4,29 +4,29 @@ A responsive and feature-rich weather dashboard application built with React.js 
 
 ## Live Demo
 
-`[Link to Your Vercel Live Deployment URL Here]`
+`https://weather-dashboard-qm8o.vercel.app/`
 
 ## Screenshots
 
-*(Add 2-3 key screenshots here. Examples below show how to embed if images are in an `assets/screenshots` folder in your repo, or use GitHub hosted links)*
+![Image](https://github.com/user-attachments/assets/5cd218ce-2990-4dbd-ab9a-1302efa95643)
 
-**Desktop View:**
-![Desktop View of Weather Dashboard](assets/screenshots/desktop-view.png)
+![Image](https://github.com/user-attachments/assets/859c7f06-02ab-4cde-a2ae-f4b5bdc7e1f3)
 
-**Mobile View:**
-![Mobile View of Weather Dashboard](assets/screenshots/mobile-view.png)
+![Image](https://github.com/user-attachments/assets/91aaa451-3a1b-4430-a274-6fb95717ecda)
 
-**Authentication Form:**
-![Authentication Form](assets/screenshots/auth-form.png)
+![Image](https://github.com/user-attachments/assets/092c41a6-0f89-4b9d-89ff-ff91b721b878)
 
-<!-- 
-Alternative for GitHub hosted images:
-1. Go to an Issue in your GitHub repo (or create a new one temporarily).
-2. Drag & drop your image into the comment box. GitHub will upload it and give a markdown link.
-3. Copy that link, e.g., ![My Screenshot](https
-//user-images.githubusercontent.com/your_id/some_hash/image.png)
-4. Paste it here.
--->
+![Image](https://github.com/user-attachments/assets/de1359aa-97fa-41fc-81dc-1d4476d49445)
+
+![Image](https://github.com/user-attachments/assets/a1af5ef6-c613-4b20-b40b-291dbb2893a7)
+
+![Image](https://github.com/user-attachments/assets/4b739607-a28a-4f0f-a51e-fc1b197c8c87)
+
+![Image](https://github.com/user-attachments/assets/5701b670-adba-4771-8b85-268eb863b1aa)
+
+![Image](https://github.com/user-attachments/assets/e08622bd-2825-4d6a-b1e6-03bb0750d3a6)
+
+![Image](https://github.com/user-attachments/assets/6c134803-74ed-451b-8092-7ed25878cc94)
 
 ## Features Implemented
 
@@ -126,8 +126,8 @@ react-weather-dashboard/
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <YOUR_GITHUB_REPOSITORY_URL>
-    cd react-weather-dashboard
+    git clone https://github.com/godwinm8/Weather_Dashboard.git
+    cd weather-dashboard
     ```
 
 2.  **Install Dependencies:**
@@ -140,17 +140,17 @@ react-weather-dashboard/
         ```bash
         cp .env.example .env
         ```
-    *   Open the `.env` file and fill in your actual API keys and Supabase credentials:
+    *   Open the `.env` file and fill actual API keys and Supabase credentials:
         ```env
-        VITE_OPENWEATHERMAP_API_KEY=YOUR_OPENWEATHERMAP_API_KEY_HERE
-        VITE_SUPABASE_URL=YOUR_SUPABASE_PROJECT_URL_HERE
-        VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_PROJECT_ANON_KEY_HERE
+        VITE_OPENWEATHERMAP_API_KEY=a3b4bb532a2069818ae4cb0bc89028c8
+VITE_SUPABASE_URL=https://pzitrsoudekbvlvzskkl.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6aXRyc291ZGVrYnZsdnpza2tsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzAzMDMsImV4cCI6MjA2Mzg0NjMwM30.MsvCG0q2E187Zq79FmiO4Ea7PzJnulZSQKpX4G1Nl3w
         ```
     *   Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api).
-    *   Get your Supabase Project URL and Anon Public Key from your project's dashboard on [Supabase](https://supabase.com) (Settings -> API).
+    *   Get Supabase Project URL and Anon Public Key from project's dashboard on [Supabase](https://supabase.com) (Settings -> API).
 
 4.  **Set Up Supabase Database Table & Policies:**
-    *   Log in to your Supabase project dashboard.
+    *   Log in to Supabase project dashboard.
     *   Navigate to the "SQL Editor" section.
     *   Click "New query" and execute the following SQL statements:
         ```sql
@@ -187,7 +187,7 @@ react-weather-dashboard/
           FOR EACH ROW
           EXECUTE PROCEDURE public.handle_updated_at();
         ```
-    *   **Supabase Authentication Settings:** In your Supabase project, go to "Authentication" -> "Providers" and ensure "Email" is enabled. Under "Authentication" -> "Settings", you can configure options like "Enable email confirmations" (recommended for production, can be disabled for easier development testing).
+    *   **Supabase Authentication Settings:** In Supabase project, go to "Authentication" -> "Providers" and ensure "Email" is enabled. Under "Authentication" -> "Settings", configure options like "Enable email confirmations" (recommended for production, can be disabled for easier development testing).
 
 5.  **Run the Development Server:**
     ```bash
@@ -196,8 +196,6 @@ react-weather-dashboard/
     The application will typically be available at `http://localhost:5173`.
 
 ## How I Approached the Assignment
-
-*(This is a template, customize it to reflect your specific journey and insights!)*
 
 My development approach for this Weather Dashboard was iterative, starting with core functionalities and progressively integrating advanced features and UI refinements, keeping the user experience and code quality in mind.
 
