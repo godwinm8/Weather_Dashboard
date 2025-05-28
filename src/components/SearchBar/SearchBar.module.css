@@ -1,0 +1,40 @@
+.searchForm {
+  display: flex;
+  gap: var(--space-2);
+  align-items: stretch;
+  width: 100%;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding-top: var(--control-vertical-padding, var(--space-3));
+  padding-bottom: var(--control-vertical-padding, var(--space-3));
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  font-size: var(--control-font-size, var(--font-size-md));
+  line-height: var(--control-line-height, var(--line-height-normal));
+  border: 1px solid var(--border-color-medium);
+  border-radius: var(--border-radius-md);
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  transition: border-color var(--transition-duration-short) ease-in-out,
+    box-shadow var(--transition-duration-short) ease-in-out;
+  box-sizing: border-box;
+  min-width: 150px;
+}
+.searchInput::placeholder {
+  color: var(--text-placeholder);
+  opacity: 1;
+}
+
+.searchButtonOverride {
+  padding-top: var(--control-vertical-padding, var(--space-3)) !important;
+  padding-bottom: var(--control-vertical-padding, var(--space-3)) !important;
+  font-size: var(--control-font-size, var(--font-size-md)) !important;
+  line-height: var(--control-line-height, var(--line-height-normal)) !important;
+
+  padding-left: var(--space-6) !important;
+  padding-right: var(--space-6) !important;
+
+  flex-shrink: 0;
+}

@@ -1,0 +1,185 @@
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.appHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  flex-shrink: 0;
+}
+.mainTitle {
+  margin-bottom: 0;
+  text-align: left;
+  flex-grow: 1;
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+}
+.userEmailHint {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  margin-left: var(--space-1);
+  font-weight: var(--font-weight-normal);
+}
+@media (max-width: 767px) {
+  .userEmailHint {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .userEmailHint {
+    display: inline;
+  }
+}
+
+.authSection {
+  margin-bottom: var(--space-6);
+  flex-shrink: 0;
+}
+.guestPrompt {
+  text-align: center;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-5);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.dashboardCore {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 0;
+}
+
+.topControlsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  flex-shrink: 0;
+}
+
+.searchBarWrapper {
+  flex-grow: 1;
+  min-width: 250px;
+}
+
+.searchBarWrapper > form {
+  width: 100%;
+}
+
+.unitSwitcherWrapper {
+  flex-shrink: 0;
+}
+
+.contentArea {
+  flex-grow: 1;
+  overflow-y: auto;
+  min-height: 0;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-4);
+}
+
+.commonErrorWrapper {
+  width: 100%;
+  margin-bottom: var(--space-6);
+}
+.dashboardLayout {
+  display: grid;
+  gap: var(--space-5);
+  align-items: stretch;
+}
+.weatherSection,
+.forecastSectionWrapper {
+  min-width: 0;
+  width: 100%;
+  background-color: var(--bg-card);
+  padding: var(--space-5);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+.forecastTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+  text-align: center;
+  border-bottom: 1px solid var(--border-color-light);
+  padding-bottom: var(--space-3);
+  flex-shrink: 0;
+}
+.forecastSectionWrapper > div[class*="forecastGrid_forecastGrid"] {
+  flex-grow: 1;
+}
+.noCityMessage {
+  text-align: center;
+  margin-top: 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  padding: var(--space-6) var(--space-4);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color-light);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .appHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .mainTitle {
+    text-align: center;
+    margin-bottom: var(--space-3);
+  }
+  .signOutButton {
+    width: auto;
+    align-self: center;
+  }
+
+  .topControlsContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .searchBarWrapper {
+    margin-bottom: var(--space-3);
+    width: 100%;
+    max-width: none;
+  }
+  .unitSwitcherWrapper {
+    align-self: center;
+    width: auto;
+  }
+
+  .dashboardLayout {
+    grid-template-columns: 1fr;
+  }
+  .forecastSectionWrapper {
+    margin-top: var(--space-5);
+  }
+}
+
+@media (min-width: 768px) {
+  .dashboardLayout {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+  }
+}
+@media (min-width: 1024px) {
+  .dashboardLayout {
+    grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr);
+  }
+}

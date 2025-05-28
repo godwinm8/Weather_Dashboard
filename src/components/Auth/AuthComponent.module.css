@@ -1,0 +1,88 @@
+.authContainer {
+  padding: var(--space-6) var(--space-7);
+  margin: 0 auto;
+  max-width: 480px;
+  border: 1px solid var(--border-color-light);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--bg-card);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.formTitle {
+  font-size: var(--font-size-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  font-weight: var(--font-weight-semibold);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.formGroup {
+  text-align: left;
+  margin-bottom: var(--space-1);
+}
+
+.label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border-color-medium);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-md);
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  transition: border-color var(--transition-duration-short) ease-in-out,
+    box-shadow var(--transition-duration-short) ease-in-out;
+}
+
+.submitButtonMargin {
+  margin-top: var(--space-2);
+}
+
+.toggleFormButton {
+  margin-top: var(--space-5);
+}
+
+.error,
+.successMessage,
+.authMessage {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.error {
+  color: var(--error-color);
+  background-color: var(--error-bg-color);
+  border-color: rgba(var(--error-color-rgb), 0.3);
+}
+.successMessage {
+  color: var(--success-color);
+  background-color: var(--success-bg-color);
+  border-color: rgba(var(--success-color-rgb), 0.3);
+}
+.authMessage {
+  color: var(--text-secondary);
+  background-color: var(--bg-hover-light);
+  border-color: var(--border-color-light);
+  text-align: center;
+  padding: var(--space-6);
+}
