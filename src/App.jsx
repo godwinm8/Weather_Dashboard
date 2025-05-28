@@ -14,7 +14,7 @@ import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 
 import styles from "./App.module.css";
 import "./styles/global.css";
-import { fetchWeatherByCity } from "./services/weatherService";
+import { fetchWeatherByCity,fetchForecastByCity } from "./services/WeatherService";
 
 const AppContent = () => {
   const { user, signOut, loading: authLoading } = useAuth();
