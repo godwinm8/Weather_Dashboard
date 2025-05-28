@@ -71,56 +71,7 @@ A responsive and feature-rich weather dashboard application built with React.js 
 
 ## Project Structure
 
-react-weather-dashboard/
-├── .env # Environment variables (API keys - GIT IGNORED!)
-├── .gitignore # Specifies files/folders for Git to ignore
-├── eslint.config.js # ESLint configuration
-├── index.html # Main HTML entry point for the application
-├── package-lock.json # Records exact versions of installed dependencies
-├── package.json # Project metadata, dependencies, and scripts
-├── README.md # This project documentation file
-├── vite.config.js # Vite build tool configuration
-│
-├── node_modules/ # Installed npm packages (GIT IGNORED)
-│
-├── public/ # Static assets served directly
-│ └── (e.g., favicon.ico, vite.svg)
-│
-└── src/ # Main source code for the application
-├── App.jsx # Top-level React component, orchestrates layout and providers
-├── App.module.css # CSS Modules specific to App.jsx layout
-├── main.jsx # Entry point of the React application (renders App to DOM)
-├── supabaseClient.js # Supabase client initialization and export
-│
-├── assets/ # For static assets like images, custom fonts (if any)
-│ └── (empty or image files)
-│
-├── components/ # Reusable UI components
-│ ├── Auth/ # Authentication related UI
-│ │ ├── AuthComponent.jsx
-│ │ └── AuthComponent.module.css
-│ ├── Button/ # Reusable Button component
-│ │ ├── Button.jsx
-│ │ └── Button.module.css
-│ ├── common/ # Shared, generic utility components
-│ │ |
-│ │ ├── GlobalLoader.jsx
-│ │ └── GlobalLoader.module.css
-│ ├── ErrorMessage/ # Component for displaying error messages
-│ ├── ForecastDisplay/ # Component for the 5-day weather forecast
-│ ├── SearchBar/ # Component for city search input (input + its own button)
-│ ├── UnitSwitcher/ # Component for switching temperature units (°C/°F)
-│ └── WeatherDisplay/ # Component for displaying current weather conditions
-│
-├── context/ # React Context API for global state management
-│ ├── AuthContext.jsx # Manages user authentication state
-│ └── WeatherContext.jsx # Manages UI preferences (city, units)
-│
-├── services/ # Modules for external API interactions
-│ └── weatherService.js # Functions for OpenWeatherMap API calls
-│
-└── styles/ # Global styles and theme definitions
-└── global.css # Global CSS variables, base element styles, resets
+![Image](https://github.com/user-attachments/assets/246bb58e-49d1-4725-8e93-2e5ffbd93688)
 
 ## Setup and Installation
 
@@ -143,8 +94,8 @@ react-weather-dashboard/
     *   Open the `.env` file and fill actual API keys and Supabase credentials:
         ```env
         VITE_OPENWEATHERMAP_API_KEY=a3b4bb532a2069818ae4cb0bc89028c8
-VITE_SUPABASE_URL=https://pzitrsoudekbvlvzskkl.supabase.co
-VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6aXRyc291ZGVrYnZsdnpza2tsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzAzMDMsImV4cCI6MjA2Mzg0NjMwM30.MsvCG0q2E187Zq79FmiO4Ea7PzJnulZSQKpX4G1Nl3w
+        VITE_SUPABASE_URL=https://pzitrsoudekbvlvzskkl.supabase.co
+        VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6aXRyc291ZGVrYnZsdnpza2tsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzAzMDMsImV4cCI6MjA2Mzg0NjMwM30.MsvCG0q2E187Zq79FmiO4Ea7PzJnulZSQKpX4G1Nl3w
         ```
     *   Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api).
     *   Get Supabase Project URL and Anon Public Key from project's dashboard on [Supabase](https://supabase.com) (Settings -> API).
