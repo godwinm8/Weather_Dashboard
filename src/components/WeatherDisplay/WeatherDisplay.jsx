@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useWeatherContext } from "../../context/WeatherContext";
-import { fetchWeatherByCity } from "../../services/weatherService";
+import { fetchWeatherByCity } from "../../services/WeatherService";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import styles from "./WeatherDisplay.module.css";
 
